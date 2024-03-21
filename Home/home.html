@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1>Logo</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li>
+            <button id="loginButton" class="button">
+              <span class="button-content">LOGIN</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="about-section" class="section about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="clssabout">
+          <p>
+            Welcome to our social media dashboard! We are passionate about
+            connecting people and fostering meaningful interactions online. Our
+            platform is designed to empower users to express themselves, share
+            their stories, and engage with others in a safe and inclusive
+            environment. With a focus on user experience and innovation, we
+            strive to provide the best tools and features to help our community
+            thrive. Join us in shaping the future of social media!
+          </p>
+          <!-- Placeholder image -->
+          <img
+            src="../images/pexels-wallsio-15595051.jpg"
+            alt="About Us Image"
+          />
+          <!-- You can add more content here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="section contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="card">
+          <form class="form">
+            <div class="group">
+              <input placeholder="‎" type="text" required="" />
+              <label for="name">Name</label>
+            </div>
+            <div class="group">
+              <input
+                placeholder="‎"
+                type="email"
+                id="email"
+                name="email"
+                required=""
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="group">
+              <textarea
+                placeholder="‎"
+                id="comment"
+                name="comment"
+                rows="5"
+                required=""
+              ></textarea>
+              <label for="comment">Comment</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Social Media Dashboard. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="../images/social-media (1).png" alt="social-media" />
+        <h1>Social Media Dashboard</h1>
+      </div>
+      <div class="right">
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch" />
+          <span class="slider"></span>
+        </label>
+
+        <img src="../images/profile.png" alt="profile" />
+        <h3>User Name</h3>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+    <main>
+      <div class="dashboard">
+        <!-- ?  facebook Section   -->
+        <h2>
+          <i class="fa-brands fa-facebook-f" style="color: #2b1fd6"></i>Facebook
+        </h2>
+        <section class="fb-section">
+          <div class="card">
+            <h3>Followers</h3>
+            <span id="fbFollowers"><span class="loading"></span></span>
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="card">
+            <h3>Likes</h3>
+            <span id="fbLikes"><span class="loading"></span></span>
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+
+          <div class="card">
+            <h3>Comments</h3>
+            <span id="fbComments"><span class="loading"></span></span>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="card">
+            <h3>Following</h3>
+            <span id="fbFollowing"><span class="loading"></span></span>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="card">
+            <h3>Posts</h3>
+
+            <span id="fbPosts"><span class="loading"></span></span>
+            <i class="fa-solid fa-signs-post"></i>
+          </div>
+        </section>
+        <!-- ?  Instagram Section   -->
+        <h2>
+          <i class="fa-brands fa-instagram" style="color: #9e1a4f"></i>Instagram
+        </h2>
+        <section class="ig-section">
+          <div class="card">
+            <h3>Followers</h3>
+            <span id="igFollowers"><span class="loading"></span> </span>
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="card">
+            <h3>Likes</h3>
+
+            <span id="igLikes"><span class="loading"></span></span>
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+
+          <div class="card">
+            <h3>Comments</h3>
+
+            <span id="igComments"><span class="loading"></span></span>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="card">
+            <h3>Following</h3>
+
+            <span id="igFollowing"><span class="loading"></span></span>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="card">
+            <h3>Posts</h3>
+
+            <span id="igPosts"><span class="loading"></span></span>
+            <i class="fa-solid fa-signs-post"></i>
+          </div>
+        </section>
+        <!-- ?  Twitter Section   -->
+        <h2>
+          <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>Twitter
+        </h2>
+        <section class="tw-section">
+          <div class="card">
+            <h3>Followers</h3>
+
+            <span id="twFollowers"><span class="loading"></span></span>
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="card">
+            <h3>Likes</h3>
+            <span id="twLikes"><span class="loading"></span></span>
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+
+          <div class="card">
+            <h3>Comments</h3>
+            <span id="twComments"><span class="loading"></span></span>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="card">
+            <h3>Following</h3>
+            <span id="twFollowing"><span class="loading"></span></span>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="card">
+            <h3>Tweets</h3>
+            <span id="twTweets"><span class="loading"></span></span>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </section>
+        <!-- ?  YouTube Section   -->
+
+        <h2>
+          <i class="fa-brands fa-youtube" style="color: #ff0000"></i>YouTube
+        </h2>
+        <section class="yt-section">
+          <div class="card">
+            <h3>Subscribers</h3>
+            <span id="ytSubscribers"><span class="loading"></span></span>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="card">
+            <h3>Likes</h3>
+            <span id="ytLikes"><span class="loading"></span></span>
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+
+          <div class="card">
+            <h3>Comments</h3>
+            <span id="ytComments"><span class="loading"></span></span>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="card">
+            <h3>Views</h3>
+            <span id="ytViews"><span class="loading"></span></span>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div class="card">
+            <h3>Videos</h3>
+            <span id="ytVideos"><span class="loading"></span></span>
+            <i class="fa-solid fa-video"></i>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

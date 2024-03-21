@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 0;
+  height: 70vh;
+  background-image: url(../images/pexels-prateek-katyal-2694434.jpg);
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire navbar */
+}
+
+.navbar h1 {
+  margin: 0;
+  float: left;
+  font-size: 40px !important;
+}
+
+.navbar ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.navbar ul li:hover {
+  opacity: 0.5;
+}
+
+.navbar ul li:first-child {
+  margin-left: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 50px 0;
+}
+/* ! about section ----------------------------------------------------- */
+.about-section {
+  background-color: #0d1526;
+  color: white !important;
+}
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.about-section p {
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.clssabout {
+  display: flex;
+  justify-content: space-between;
+}
+.about-section img {
+  width: 60% !important;
+}
+/* ! contact section ----------------------------------------------------- */
+.contact-section {
+  background-color: #08051d;
+  color: white !important;
+}
+.contact-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.footer {
+  background-color: #000102;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+/*! contact form ------------------------------------------------------ */
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 254, 254);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form .group input:focus + label,
+.form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #040227;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #27408b;
+}
+/* ! button nev ============================================== */
+.button {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  /* transform-origin: 0 50%; */
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(41, 16, 185) 10.8%,
+    rgb(15, 113, 204) 94.3%
+  );
+  transition: all 0.475s;
+}

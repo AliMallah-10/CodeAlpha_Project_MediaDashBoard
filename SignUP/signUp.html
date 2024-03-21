@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signUp.css" />
+  </head>
+  <body>
+    <div class="login-box">
+      <p>Sign Up</p>
+      <form id="signupForm" onsubmit="return signUp()">
+        <div class="user-box">
+          <input required name="email" type="email" />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input required name="phone" type="tel" pattern="[0-9]{10}" />
+          <label>Phone</label>
+        </div>
+        <div class="user-box">
+          <input required name="password" type="password" />
+          <label>Password</label>
+        </div>
+        <div class="user-box">
+          <input required name="confirmPassword" type="password" />
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Sign Up
+        </button>
+      </form>
+      <p id="signupMessage" class="error-message" style="color: white"></p>
+      <p>
+        Already have an account?
+        <a href="../login/login.html" class="a2">Sign In!</a>
+      </p>
+    </div>
+
+    <script src="./signup.js"></script>
+  </body>
+</html>
